@@ -213,13 +213,22 @@ a{
 
     .conteiner{
         /* Tamanho */
-        width: 90%;
-        height: 400px;
+        width: 100%;
+        height: 100%;
+
+        /* Posição */
+        justify-content: center;
+
+        
     }
 
+    /* Tamanho da foto */
+
     .conteinerFoto{
-        width: 150px;
-        height: 150px;
+        /* Tamanho */
+        width: 200px;
+        height: 200px;
+       
     }
 
      /* Nomes (das músicas e dos artistas) */
@@ -236,8 +245,28 @@ a{
 
     /* Controles */
 
+    .controle1{
+        /* Tamanho */
+        width: 100%;
+        height: 10%;
+
+        /* Espaçamento */
+        margin-bottom: 50px;
+    }
+
     .range{
         width: 100%;
+    }
+
+    .controle2{
+        /* Tamanho */
+        width: 100%;
+
+        /* Posição */
+        justify-content: space-between;
+
+        /* Espaçamento */
+        padding: 10px;
     }
 
 }
