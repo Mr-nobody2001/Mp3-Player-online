@@ -1,0 +1,248 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Azeret Mono";
+    color: #000;
+}
+
+body{
+    background-color: #7ED731;
+}
+
+/* Conteiner: Global */
+
+.conteiner{
+    /* Posição */
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    /* Background */
+    border-radius: 10px;
+
+    /* Tamanho */
+    width: 600px;
+    height: 550px;
+
+    /* Espaçamento */
+    padding: 15px;
+}
+
+/* Conteiner: Foto */
+
+.conteinerFoto{
+    /* Tamanho */
+    width: 200px;
+    height: 200px;
+}
+
+/* Nomes (dos artistas e das músicas) */
+
+.conteinerT{
+    /* Posição */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+
+    /* Tamanho */
+    height: 80px;
+}
+
+h1{
+    font-family: Gotham;
+}
+
+h3{
+    font-family: Gotham;
+
+}
+
+/* Imagens visiveis */
+.imgV{
+    border-radius: 25px;
+}
+
+/* Imagens invisiveis */
+.imgI{
+    border-radius: 25px;
+    display: none;
+}
+
+/* Conteiner: Controle */
+
+.controle1{
+    /* Posição */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Tamanho */
+    width: 100%;
+    height: 25%;
+}
+
+/* Range */
+
+.range {
+    -webkit-appearance: none;
+    outline: none;
+    background-color: #000;
+    width: 100%;
+    height: 7px;
+    border-radius: 9px;   
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    border:  2px solid #000;
+
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.range::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    border:  2px solid #000;
+
+    background: #ffffff;
+    cursor: pointer;
+}
+
+/* Números embaixo de range (tempo) */
+
+.conteinerT2{
+    /* Posição */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    /* Tamanho */
+    width: 90%;
+}
+
+/* Botões: Posição */
+
+.controle2{
+    /* Posição */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* Tamanho */
+    width: 80%;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+@media screen and (max-width: 650px) {
+    /* Conteiner global */
+
+    .conteiner{
+        /* Tamanho */
+        width: 90%;
+        height: 450px;
+    }
+
+    /* Conteiner foto */
+
+    .conteinerFoto{
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Nomes (das músicas e dos artistas) */
+    h1{
+        /* Texto */
+        font-size: 25px;
+    }
+
+    h3{
+        /* Texto */
+        font-size: 15px;
+    }
+
+    /* Controles */
+
+    .controle1{
+        /* Tamanho */
+        height: 18%;
+    }
+
+    .range{
+        width: 90%;
+    }
+
+    .controle2{
+        /* Tamanho */
+        height: 25%;
+    }
+
+    /* Números embaixo de range (tempo) */
+
+    .conteinerT2{
+        width: 80%;
+    }
+
+    .conteinerT2 > p{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    /* Conteiner global */
+
+    .conteiner{
+        /* Tamanho */
+        width: 90%;
+        height: 400px;
+    }
+
+    .conteinerFoto{
+        width: 150px;
+        height: 150px;
+    }
+
+     /* Nomes (das músicas e dos artistas) */
+
+    h1{
+        /* Texto */
+        font-size: 20px;
+    }
+
+    h3{
+        /* Texto */
+        font-size: 15px;
+    }
+
+    /* Controles */
+
+    .range{
+        width: 100%;
+    }
+
+}
+
+@font-face {
+    font-family: Gotham;
+    src:url(Gotham-Black.otf);
+  }
