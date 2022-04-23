@@ -224,10 +224,15 @@ a{
 
     /* Tamanho da foto */
 
-    .conteinerFoto{
+     .conteinerFoto{
         /* Tamanho */
         width: 200px;
         height: 200px;
+
+        /* Posição */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
        
     }
 
