@@ -217,7 +217,7 @@ a{
         height: 100%;
 
         /* Posição */
-        justify-content: center;
+        justify-content: flex-end;
 
         
     }
